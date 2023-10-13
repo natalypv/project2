@@ -1,0 +1,75 @@
+
+body{
+    text-align: center;
+    background-color:cornsilk;
+}
+
+section{
+    width: 75vw;
+    margin: auto;
+}
+
+h1{
+    font-size: 8vw;
+}
+.title{
+    text-align: center;
+
+    background: linear-gradient(to right, 
+    #d43d33 20%, #ffd000 40%, #ffd000  60%, #d43d33 80%);
+
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: text 1s linear infinite;
+}
+    @keyframes text {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+img{
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+}
+.container{
+margin: auto;
+}
+
+.frame{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+    position:absolute;
+}
+
+.slide{
+    display:block;
+    margin-bottom: 2rem;
+}
+
+.current {
+    transition: opacity .5s ease-out;
+}
+
+.controls a{
+    text-decoration: none;
+    color:mistyrose;
+    background-color:indianred;
+    border-radius: 10%;
+    padding: 0.5%;
+    margin: 10%;
+}
